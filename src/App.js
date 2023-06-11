@@ -1,5 +1,7 @@
 import './index.css';
-const pizzaData = [
+import Pizza from "./componants/Pizza/Pizza";
+
+const PizzaData = [
   {
     name: "Focaccia",
     ingredients: "Bread with italian olive oil and rosemary",
@@ -48,9 +50,13 @@ function App() {
   
   return (
     <div>
-      Hello World
+      <h1>Hello World </h1>
+       <Pizza />
     </div>
   )
 }
-
 export default App
+
+
+
+
