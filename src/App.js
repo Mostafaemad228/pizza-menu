@@ -44,7 +44,7 @@ const pizzaData = [
   },
 ];
 
-function Data() {
+function App() {
   
   return (
     <div>
@@ -53,4 +53,4 @@ function Data() {
   )
 }
 
-export default Data
+export default App
