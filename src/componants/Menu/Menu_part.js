@@ -1,4 +1,4 @@
-import Pizza from '../Pizza_menu/Pizza';
+import Pizza from '../Pizza_part/Pizza';
 
 function Menu() {
     return (
