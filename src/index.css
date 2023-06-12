@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap");
 
 * {
   margin: 0;
@@ -7,11 +7,11 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 15px;
 }
 
 body {
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: "Roboto Mono", sans-serif;
   color: #252525;
   font-weight: 400;
   background-color: #f7f2e9;
@@ -44,31 +44,12 @@ body {
 
   text-transform: uppercase;
   text-align: center;
-  font-size: 5.2rem;
+  font-size: 3.2rem;
   font-weight: 300;
   letter-spacing: 3px;
   position: relative;
   width: 100%;
   display: block;
-}
-
-.header h1::before,
-.header h1::after {
-  display: block;
-  content: '';
-  height: 3px;
-  width: 12rem;
-  background-color: #edc84b;
-  position: absolute;
-  top: calc(50% - 1px);
-}
-
-.header h1::before {
-  left: 0;
-}
-
-.header h1::after {
-  right: 0;
 }
 
 /* *************** */
@@ -83,16 +64,17 @@ body {
 .menu h2 {
   display: inline-block;
   padding: 1rem 0;
+  margin-top: 3rem;
   border-top: 2px solid currentColor;
   border-bottom: 2px solid currentColor;
-  font-size: 2.4rem;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 500;
 }
 
 .menu > p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
   line-height: 1.6;
   width: 80%;
@@ -102,16 +84,19 @@ body {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4.8rem;
+  gap: 2.8rem;
 }
 
 .pizza {
   display: flex;
   gap: 3.2rem;
+  margin-top: 3rem;
+  border: 1px solid #edc84b;
+  padding: 2rem;
 }
 
 .pizza img {
-  width: 12rem;
+  width: 10rem;
   aspect-ratio: 1;
   align-self: start;
 }
@@ -145,16 +130,25 @@ body {
 }
 
 .pizza.sold-out img {
-  filter: grayscale();
+  filter: grayscale(2);
   opacity: 0.8;
 }
 
 /* *************** */
 
 .footer {
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
-
+.open {
+  background-color: rgb(5, 93, 52);
+  color: #f7f2e9;
+  padding: 5px;
+}
+.close {
+  background-color: rgb(250, 28, 73);
+  color: #f7f2e9;
+  padding: 5px;
+}
 .order {
   display: flex;
   flex-direction: column;

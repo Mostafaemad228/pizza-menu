@@ -1,5 +1,8 @@
 import './index.css';
-import Pizza from "./componants/Pizza/Pizza";
+// import Pizza from "./componants/Pizza_menu/Pizza";
+import Head from "./componants/Header/Head";
+import Footer from './componants/Footer/Footer_part';
+import Menu from './componants/Menu/Menu_part';
 
 const PizzaData = [
   {
@@ -47,11 +50,13 @@ const PizzaData = [
 ];
 
 function App() {
-  
+
   return (
-    <div>
-      <h1>Hello World </h1>
-       <Pizza />
+    <div className='container'>
+      <Head />
+      <Menu />
+      <Footer/>
+
     </div>
   )
 }
