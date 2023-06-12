@@ -1,11 +1,9 @@
 import Pizza from '../Pizza_part/Pizza';
 
-function Menu() {
+function Menu({ Pizzadata }) {
     return (
         <div className='Pizzas'>
-            <Pizza />
-            <Pizza />
-            <Pizza />
+            <Pizza Pizzadata={Pizzadata} />
         </div>
     )
 }

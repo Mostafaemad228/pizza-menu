@@ -1,18 +1,25 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
-import '../../index.css'
-function Pizza() {
-    return (
+import React from 'react';
+import '../../index.css';
 
-        <div className='pizza'>
-            <div>
-                <img src={require('../../pizzas/focaccia.jpg')} alt="pizza focaccia" />
-            </div>
-            <div>
-                <h2>focaccia pizza</h2>
-                <p>Bread with italian olive oil and rosemary</p>
-                <span>20</span>
-            </div>
+function Pizza({ Pizzadata }) {
+    console.log(Pizzadata);
+
+    return (
+        <div>
+            {Pizzadata.map((pizza) => (
+                <div className='pizza' key={pizza.name}>
+                    <div>
+                        <img src={require(`../../${pizza.photoName}`)} alt={pizza.name} />
+                    </div>
+                    <div>
+                        <h2>{pizza.name}</h2>
+                        <p>{pizza.ingredients}</p>
+                        <span>{pizza.price}</span>
+                    </div>
+                </div>
+            ))}
         </div>
     );
 }
-export default Pizza
+
+export default Pizza;
