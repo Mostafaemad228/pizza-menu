@@ -4,6 +4,7 @@ import Head from "./componants/Header/Head";
 import Footer from './componants/Footer/Footer_part';
 import Menu from './componants/Menu/Menu_part';
 
+const passdata = "Data passed from App"
 const PizzaData = [
   {
     name: "Focaccia",
@@ -53,7 +54,7 @@ function App() {
 
   return (
     <div className='container'>
-      <Head />
+      <Head pass={passdata} />
       <Menu />
       <Footer/>
 
