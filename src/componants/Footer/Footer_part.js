@@ -10,7 +10,7 @@ function Footer() {
             <div className="order">
                 <p> {getTime >= openHour && getTime <= closeHour ?
                     <span className="open">resturant is open now</span> : <span className="close">resturant is close now</span>}
-                    we are open from 12:00 PM until 23:00 Pm; visite our site from here <a href="#!" > Pizza@pizza.com</a>
+                    we are open from {openHour}:00 PM until {closeHour}:00 Pm; visite our site from here <a href="#!" > Pizza@pizza.com</a>
                 </p>
                 <button type="" className="btn"> Order </button>
             </div>

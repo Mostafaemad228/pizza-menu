@@ -1,24 +1,23 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import '../../index.css';
 
 function Pizza({ Pizzadata }) {
-    console.log(Pizzadata);
 
     return (
-        <div>
-            {Pizzadata.map((pizza) => (
-                <div className='pizza' key={pizza.name}>
-                    <div>
+        <React.Fragment>
+        {Pizzadata.map((pizza) => (
+            <li className={`pizza ${pizza.soldOut ? 'sold-out':'' }`} key={pizza.name}>
+                    <div >
                         <img src={require(`../../${pizza.photoName}`)} alt={pizza.name} />
                     </div>
                     <div>
                         <h2>{pizza.name}</h2>
                         <p>{pizza.ingredients}</p>
-                        <span>{pizza.price}</span>
+                    <span >{pizza.soldOut ? "Sold Out" : pizza.price+`$`  } </span>
                     </div>
-                </div>
+                </li>
             ))}
-        </div>
+        </React.Fragment>
     );
 }
 

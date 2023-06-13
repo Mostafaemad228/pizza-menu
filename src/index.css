@@ -7,15 +7,15 @@
 }
 
 html {
-  font-size: 15px;
+  font-size: 15px !important;
 }
 
 body {
   font-family: "Roboto Mono", sans-serif;
   color: #252525;
   font-weight: 400;
-  background-color: #f7f2e9;
-  border-bottom: 1.6rem solid #edc84b;
+  background-color: #d3ffc4;
+  border-bottom: 1.6rem solid #46973f;
   min-height: 100vh;
   padding: 3.2rem;
   padding-bottom: 6rem;
@@ -39,7 +39,7 @@ body {
 
 .header h1 {
   /* Non-accessible color */
-  color: #edc84b;
+  color: #46973f;
   /* color: #af8602; */
 
   text-transform: uppercase;
@@ -71,13 +71,16 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 500;
+  color: #093a04;
 }
 
 .menu > p {
   font-size: 1rem;
   text-align: center;
   line-height: 1.6;
-  width: 80%;
+  width: 70%;
+  color: #093a04;
+
 }
 
 .pizzas {
@@ -91,7 +94,6 @@ body {
   display: flex;
   gap: 3.2rem;
   margin-top: 3rem;
-  border: 1px solid #edc84b;
   padding: 2rem;
 }
 
@@ -99,6 +101,7 @@ body {
   width: 10rem;
   aspect-ratio: 1;
   align-self: start;
+  border-radius: 50%;
 }
 
 .pizza div {
@@ -108,15 +111,16 @@ body {
   padding: 0.4rem 0;
 }
 
-.pizza h3 {
-  font-size: 2rem;
-  font-weight: 400;
+.pizza h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #093a04;
+
 }
 
 .pizza p {
-  font-size: 1.4rem;
-  font-weight: 300;
-  font-style: italic;
+  font-size: 1rem;
+  font-weight: 400;
   margin-bottom: auto;
 }
 
@@ -125,13 +129,15 @@ body {
   font-size: 1.6rem;
 }
 
-.pizza.sold-out {
-  color: #888;
+.pizza.sold-out,
+.pizza.sold-out h2 {
+  color: #888 !important;
 }
 
 .pizza.sold-out img {
-  filter: grayscale(2);
-  opacity: 0.8;
+
+  filter: grayscale(0.20);
+  opacity: 0.5;
 }
 
 /* *************** */
@@ -140,12 +146,12 @@ body {
   font-size: 1rem;
 }
 .open {
-  background-color: rgb(5, 93, 52);
+  background-color: #055d34;
   color: #f7f2e9;
   padding: 5px;
 }
 .close {
-  background-color: rgb(250, 28, 73);
+  background-color: #fa1c49;
   color: #f7f2e9;
   padding: 5px;
 }
@@ -157,19 +163,19 @@ body {
 }
 
 .btn {
-  color: inherit;
+  color: #093a04;
   font-family: inherit;
   border: none;
   font-size: 1.4rem;
   font-weight: 500;
-  background-color: #edc84b;
+  background-color: #5efe7e;
   padding: 1.4rem 3.2rem;
   cursor: pointer;
   transition: all 0.2s;
 }
 
 .btn:hover {
-  background-color: #e9bb24;
+  background-color: #78fa92;
 }
 
 /*
