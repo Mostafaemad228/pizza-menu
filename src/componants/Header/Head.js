@@ -1,7 +1,7 @@
 function Head() {
     return (
         <div className="header">
-            <h1>Fast React Pizza .co</h1>
+            <h1> Welcome To Italiano Pizza Resturant </h1>
             <div className="menu">
                 <h2>our Menu</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
